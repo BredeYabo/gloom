@@ -12,9 +12,21 @@
 // Main OpenGL program
 void runProgram(GLFWwindow* window);
 
+int createVertexArrayObject(float* vertex_buffer_data, 
+							unsigned long dataLength, 
+							unsigned int* index_buffer_data, 
+							unsigned long indexLength,
+							float* colour_buffer_data,
+							unsigned long colourLength);
 
+
+
+// GLFW callback mechanisms
+void keyboardCallback(GLFWwindow* window, int key, int scancode,
+                      int action, int mods);
 // Function for handling keypresses
 void handleKeyboardInput(GLFWwindow* window);
+
 
 
 // Checks for whether an OpenGL error occurred. If one did,

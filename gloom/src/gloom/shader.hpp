@@ -130,6 +130,13 @@ namespace Gloom
             else if (ext == "vert") return glCreateShader(GL_VERTEX_SHADER);
             else                    return false;
         }
+        GLuint shader_num() {
+            return mProgram;
+        }
+        
+
+
+
 
     private:
         // Disable copying and assignment
